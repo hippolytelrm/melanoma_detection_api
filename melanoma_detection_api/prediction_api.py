@@ -33,10 +33,8 @@ def predict():
                     image = Image.open(data)
                     img = preprocessing(image=image)
 
-                    prediction_index = str(np.argmax(model.predict(x=img),axis=1)[0])
+                    prediction_index = np.argmax(model.predict(x=img),axis=1)[0]
                     prediction = np.squeeze(model.predict(x=img),0)
-                    print(np.argmax(model.predict(x=img),axis=1))
-                    print(prediction_index,prediction)
 
                     if prediction_index == 1:
                          return "You must consult a dermatologist!\nThe model predicted that your skin lesion is {0} with a probability of {1} % !".format(
