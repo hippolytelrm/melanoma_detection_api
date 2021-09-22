@@ -68,4 +68,4 @@ Thus, the <code>README.md</code> in the ```get_started``` folder contains an ins
 In order to improve this work, several changes can be done:
 * Using a more powerful web service development framework (FastAPI, Django)
 * installing the necessary dependencies using Docker
-* Solving the dependencies conflict caused using Tensorflow-macos
+* ~~Solving the dependencies conflict caused using Tensorflow-macos~~
