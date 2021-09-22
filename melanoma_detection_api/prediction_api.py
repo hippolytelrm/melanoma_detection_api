@@ -61,10 +61,7 @@ if __name__ == '__main__':
         port = 12345 # If you don't provide any port the port will be set to 12345
 
     model_path = 'model/model_melanoma_detection.h5'
-    #model_path = 'blabla'
-
     model = model_loader(model_path=model_path)
-    #print(type(model))
 
     app.run(port=port, debug=True)
 
