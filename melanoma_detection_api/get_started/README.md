@@ -28,7 +28,9 @@ In order to install the necessary dependencies, we use a [Conda environment](#se
 
 **Note** : We assume that you have already installed anaconda on your device. If it's not the case, please check out the right installation guide for your machine in the following link : [conda installation guide](https://docs.conda.io/projects/conda/en/latest/user-guide/install/).
 
-A script `quick_start.sh` is available and allows to quickly set up a conda environment with all the required modules/packages installed. 
+#### Apple M1 Mac
+
+A script `quick_start_M1.sh` is available and allows to quickly set up a conda environment with all the required modules/packages installed. 
 Make sure you have cloned the melanoma_detection_api repository beforehand. 
 
 Your root directory should look like the following : 
@@ -42,18 +44,48 @@ Then, set your current working directory to be in the get_started folder using t
 cd melanoma_detection_api/get_started/
 ```
 
-Then you can run the `quick_start.sh` script :
+Then you can run the `quick_start_M1.sh` script :
 ```bash
-bash quick_start.sh
+bash quick_start_M1.sh
 ```
 This script creates a Python 3.8.11 conda environment named **melanoma_detection_api**, install all packages/modules required.
 
 **Note**: During the execution, the terminal will ask you to confirm the installation of packages, make sure you accept.
 
-Once everything is installed, you can now activate your environment with this command: 
+Once everything is installed, you can now activate your environment, named ```melanoma``` with this command: 
 ```bash
-conda activate melanoma_detection_api
+conda activate melanoma
 ```
+
+#### Linux and Mac Intel
+
+A script `quick_start_linux_MACOS.sh` is available and allows to quickly set up a conda environment with all the required modules/packages installed. 
+Make sure you have cloned the melanoma_detection_api repository beforehand. 
+
+Your root directory should look like the following : 
+```
+<root_directory>
+|   melanoma_detection_api
+```
+
+Then, set your current working directory to be in the get_started folder using the following command :
+```bash
+cd melanoma_detection_api/get_started/
+```
+
+Then you can run the `quick_start_linux_MACOS.sh` script :
+```bash
+bash quick_start_linux_MACOS.sh
+```
+This script creates a Python 3.8.11 conda environment named **melanoma_detection_api**, install all packages/modules required.
+
+**Note**: During the execution, the terminal will ask you to confirm the installation of packages, make sure you accept.
+
+Once everything is installed, you can now activate your environment, named ```melanoma``` with this command: 
+```bash
+conda activate melanoma
+```
+
 
 ## Getting started with Melanoma Detection REST API
 
@@ -62,7 +94,7 @@ Note: the propsoed package requires the use of an API platform. We used [Postman
 The first step you need to follow is to activate the previously created conda environment, with the following command. 
 
 ```bash
-conda activate melanoma_detection_api
+conda activate melanoma
 ```
 
 Then, set your current working directory to be in the melanoma_detection_api folder using the following command :
