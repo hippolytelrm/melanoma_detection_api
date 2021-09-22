@@ -8,5 +8,5 @@ conda activate $ENV_NAME
 
 # Install packages in melanoma repo
 pip install -e .
-pip install -r requirements.txt
+pip install -r requirements_linux_MACOS.txt
 

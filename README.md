@@ -50,7 +50,7 @@ An example of inference using the API is represented in the following Figure. Th
 
 ![Postman result malignant](melanoma_detection_api/documentation/postman_result_malignant.png)
 
-**Important note** :
+**Important note**:
 
 We tried as much as possible to make the model replayable using any environment. 
 The proposed API is delivered with a starting kit (see <code>README.md</code> in the ```get_started``` folder) that enable to make 
@@ -58,6 +58,10 @@ To develop this package, we used a Mac M1 with an arm64 architecture.
 The original version of ```Tensorflow``` is not supported, hence an official version has been developed to use Tensorflow on Mac M1 (see [tensorflow_macos](https://github.com/apple/tensorflow_macos)).
 However, when we tried switching to a Linux environment, and changing ```tensorflow-macos==2.5.0``` to ```tensorflow==2.5.0```, we had some packages version conflicts, which made it not replayable. 
 
+**UPDATE**:
+
+In order to make the API work on another environments (Linux, MACOS), we created a ```requirement_linux_MACOS.txt``` file associated to a `quick_start_linux_MACOS.sh` script. 
+Thus, the <code>README.md</code> in the ```get_started``` folder contains an installation kit either for MAC M1 environment users or for Linux environment users.
 
 ## IV - To go further
 
