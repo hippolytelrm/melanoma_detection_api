@@ -44,7 +44,7 @@ Flask is a web framework for Python, meaning that it provides functionality for 
 We chose Flask framework as it comes with an inbuilt light-weighted web server which needs minimal configuration. 
 
 With this package, we provide some unit tests. The code related to unit test can be found in the directory ```tests``` and contains a few tests regarding the model loading and image pre-processing. 
-We also used [Git Large File Systeme](https://git-lfs.github.com/) to handle the model size of 136 MB which is way larger than the authorized uploading size.
+We also used [Git Large File Systeme](https://git-lfs.github.com/) to handle the model size of 136 MB which is way larger than the authorized uploading size. 
 
 An example of inference using the API is represented in the following Figure. The model returns the class (benign or malignant) as well as the confidence of the prediction. 
 
@@ -68,4 +68,4 @@ Thus, the <code>README.md</code> in the ```get_started``` folder contains an ins
 In order to improve this work, several changes can be done:
 * Using a more powerful web service development framework (FastAPI, Django)
 * installing the necessary dependencies using Docker
-* Solving the dependencies conflict caused using Tensorflow-macos
+* ~~Solving the dependencies conflict caused using Tensorflow-macos~~

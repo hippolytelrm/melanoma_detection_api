@@ -23,6 +23,16 @@ git clone https://github.com/hippolytelrm/melanoma_detection_api
 
 In order to install the necessary dependencies, we use a [Conda environment](#set-up-the-environment-with-anaconda). We discuss this choice and some amelioration in the main <code>README.md</code>. 
 
+**Note**:
+
+An error may occur while cloning the Git repository. 
+Indeed, the model ```model_melanoma_detection.h5``` in the directory ```model``` may not have the right size (130MB). 
+
+In case of downloading error, a solution is to download the file directly from the [Github page](https://github.com/hippolytelrm/melanoma_detection_api/blob/master/melanoma_detection_api/model/model_melanoma_detection.h5)
+as shown in the following screen shot.
+![Git lfs](../documentation/git_lfs.png)
+
+
 
 ### Set up the environment with Anaconda
 
